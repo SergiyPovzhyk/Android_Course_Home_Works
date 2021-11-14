@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/groupOfAnimals" android:visible="true">
+        <item android:id="@+id/firstGroup" android:title="@string/firstGroup">
+            <menu>
+                <item android:id="@+id/vorobei" android:title="@string/vorobei"/>
+                <item android:id="@+id/ivolga" android:title="@string/ivolga"/>
+                <item android:id="@+id/soroka" android:title="@string/soroka"/>
+            </menu>
+        </item>
+
+        <item android:id="@+id/secondGroup" android:title="@string/secondGroup">
+            <menu>
+                <item android:id="@+id/cow" android:title="@string/cow"/>
+                <item android:id="@+id/mouse" android:title="@string/mouse"/>
+                <item android:id="@+id/wolf" android:title="@string/wolf"/>
+            </menu>
+        </item>
+
+        <item android:id="@+id/thirdGroup" android:title="@string/thirdGroup">
+            <menu>
+                <item android:id="@+id/korop" android:title="@string/korop"/>
+                <item android:id="@+id/okunb" android:title="@string/okunb"/>
+                <item android:id="@+id/salar" android:title="@string/salar"/>
+            </menu>
+        </item>
+    </group>
+
+    <group android:id="@+id/groupOfPlants" android:visible="true">
+        <item android:id="@+id/herbs" android:title="@string/herbs">
+            <menu>
+                <item android:id="@+id/bambuk" android:title="@string/bambuk"/>
+                <item android:id="@+id/vasilek" android:title="@string/vasilek"/>
+                <item android:id="@+id/oduvan" android:title="@string/oduvan"/>
+            </menu>
+        </item>
+
+        <item android:id="@+id/trees" android:title="@string/trees">
+            <menu>
+                <item android:id="@+id/klen" android:title="@string/klen"/>
+                <item android:id="@+id/dub" android:title="@string/dub"/>
+                <item android:id="@+id/sosna" android:title="@string/sosna"/>
+            </menu>
+        </item>
+
+        <item android:id="@+id/shrubs" android:title="@string/shrubs">
+            <menu>
+                <item android:id="@+id/malina" android:title="@string/malina"/>
+                <item android:id="@+id/smorodina" android:title="@string/smorodina"/>
+                <item android:id="@+id/sirenb" android:title="@string/sirenb"/>
+            </menu>
+        </item>
+    </group>
+
+</menu>
