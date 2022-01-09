@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">p11project</string>
+    <string name="hmarnist">Мінлива хмарність</string>
+    <string name="_15c">20°/11°, відчувається як 15°C</string>
+    <string name="viter">Вітер 9 км/год, півд-зах</string>
+    <string name="_14">14</string>
+    <string name="saturday">Субота, 18 вересня</string>
+</resources>

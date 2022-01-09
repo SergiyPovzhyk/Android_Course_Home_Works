@@ -6,13 +6,156 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <View
+        android:id="@+id/view"
+        android:layout_width="1dp"
+        android:layout_height="320dp"
+        android:background="@color/black"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+    </View>
+
     <TextView
+        android:id="@+id/teamA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="TEAM A"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/view"
+
+        />
+
+    <TextView
+        android:id="@+id/countA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="50dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teamA"
+        app:layout_constraintEnd_toStartOf="@+id/view"
+        />
+
+    <TextView
+        android:id="@+id/teamB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEAM B"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/countB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="50dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/teamB"
+        app:layout_constraintStart_toEndOf="@+id/view"
+
+        />
+
+    <Button
+        android:id="@+id/a1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="45dp"
+        android:text="+1 POINT"
+        android:textSize="16dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/countA"
+
+        />
+
+    <Button
+        android:id="@+id/a2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+2 POINTs"
+        android:textSize="16dp"
+        android:paddingHorizontal="45dp"
+        app:layout_constraintStart_toStartOf="@+id/a1"
+        app:layout_constraintEnd_toEndOf="@+id/a1"
+        app:layout_constraintTop_toBottomOf="@+id/a1"
+        />
+
+    <Button
+        android:id="@+id/a3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+3 POINT"
+        android:textSize="16dp"
+        android:paddingHorizontal="45dp"
+        app:layout_constraintStart_toStartOf="@+id/a2"
+        app:layout_constraintTop_toBottomOf="@id/a2"
+        app:layout_constraintEnd_toEndOf="@+id/a2"
+        />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1 POINT"
+        android:textSize="16dp"
+        android:paddingHorizontal="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countB"
+        app:layout_constraintStart_toEndOf="@id/view"
+        android:layout_marginTop="40dp"
+        />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+2 POINT"
+        android:textSize="16dp"
+        android:paddingHorizontal="45dp"
+        app:layout_constraintEnd_toEndOf="@+id/b1"
+        app:layout_constraintTop_toBottomOf="@+id/b1"
+        app:layout_constraintStart_toStartOf="@+id/b1"
+
+        />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+3 POINT"
+        android:textSize="16dp"
+        android:paddingHorizontal="45dp"
+        app:layout_constraintEnd_toEndOf="@+id/b2"
+        app:layout_constraintTop_toBottomOf="@+id/b2"
+        app:layout_constraintStart_toStartOf="@+id/b2"
+        />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reset"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        android:paddingHorizontal="45dp"
+        android:layout_marginTop="40dp"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

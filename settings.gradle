@@ -9,3 +9,8 @@ dependencyResolutionManagement {
 rootProject.name = "Android Course Home Works"
 include ':app'
 include ':p061project'
+include ':p062project'
+include ':p071project'
+include ':p081project'
+include ':p10project'
+include ':p11project'
